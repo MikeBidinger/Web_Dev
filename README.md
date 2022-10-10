@@ -1,3 +1,3 @@
 <h1>Web_Dev</h1>
 
-<p>HTML with CSS and JavaScript projects</p>
+<p><em>HTML</em> with <em>CSS</em> and <em>JavaScript</em> projects</p>
