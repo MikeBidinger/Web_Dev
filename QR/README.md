@@ -1,3 +1,3 @@
 <h1>QR Code Web-App</h1>
 
-<p>QR code web-application using HTML, CSS and JavaScript.</p>
+<p>QR code web-application using HTML, CSS and JavaScript (including API).</p>
