@@ -1,0 +1,156 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+    --white: #ffffff;
+    --green: #04aa6d;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: var(--green);
+}
+.wrapper {
+    height: 270px;
+    width: 420px;
+    border-radius: 7px;
+    background: var(--white);
+    padding: 30px 30px 35px;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 20px var(--shadow);
+}
+.wrapper.active {
+    height: 525px;
+}
+.wrapper form {
+    height: 210px;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    border-radius: 7px;
+    border: 2px dashed var(--green);
+    background: var(--white);
+    align-items: center;
+    justify-content: center;
+    transition: height 0.2s ease;
+}
+.wrapper form:hover {
+    background: var(--green);
+    box-shadow: 0 3px 6px var(--shadow);
+}
+.wrapper.active form {
+    height: 225px;
+    background: var(--white);
+    border: 1px solid var(--green);
+    pointer-events: none;
+}
+form img {
+    display: none;
+    max-width: 148px;
+}
+.wrapper.active form img {
+    display: block;
+}
+.wrapper.active form .content {
+    display: none;
+}
+form .content i {
+    color: var(--green);
+    font-size: 55px;
+}
+form .content p {
+    color: var(--green);
+    margin-top: 15px;
+    font-size: 16px;
+}
+form:hover .content i {
+    color: var(--white);
+    font-size: 55px;
+}
+form:hover .content p {
+    color: var(--white);
+    margin-top: 15px;
+    font-size: 16px;
+}
+form.active {
+    border: 2px solid var(--green);
+}
+.wrapper .details {
+    opacity: 0;
+    margin-top: 25px;
+    pointer-events: none;
+}
+.wrapper.active .details {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+.details textarea {
+    width: 100%;
+    height: 128px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    background: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid var(--green);
+}
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+textarea:hover::-webkit-scrollbar {
+    width: 5px;
+}
+textarea:hover::-webkit-scrollbar-track {
+    background: none;
+}
+textarea:hover::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border-radius: 8px;
+}
+.details .buttons {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons button {
+    height: 55px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--white);
+    border-radius: 5px;
+    background: var(--green);
+    transition: transform 0.3s ease;
+    width: calc(100% / 2 - 10px);
+}
+.buttons button:hover {
+    box-shadow: 0 3px 6px var(--shadow);
+}
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        padding: 25px;
+        height: 260px;
+    }
+    .wrapper.active {
+        height: 520px;
+    }
+}
