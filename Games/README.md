@@ -1,8 +1,9 @@
 <h1>Games</h1>
 
-<p>Just some simple but fun web-based games using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b></p>
+<h3>Just some fun web-based games! &#128513;</h3>
+<i>#ILoveToLearn</i>
 
-<p>Just to name a few:</p>
+<p>To name a few:</p>
 
 <ul>
   <li>Snake &#128013;</li>
