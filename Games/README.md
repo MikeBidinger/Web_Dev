@@ -5,5 +5,5 @@
 <p>Just to name a few:</p>
 
 <ul>
-  <li>Snake </li>
+  <li>Snake &#128013;</li>
 </ul>
