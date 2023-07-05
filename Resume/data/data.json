@@ -30,9 +30,9 @@
                         "href": "https://www.linkedin.com/in/mike-bidinger-359906247/",
                         "target": "_blank",
                         "LinkeInIcon": {
-                            "tag": "i",
-                            "class": "material-icons",
-                            "innerHTML": "person"
+                            "tag": "img",
+                            "src": "https://raw.githubusercontent.com/MikeBidinger/MikeBidinger/main/icons/LinkedIn.svg",
+                            "alt": "in"
                         }
                     },
                     "LinkedInText": {
