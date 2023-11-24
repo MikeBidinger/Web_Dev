@@ -1,642 +1,695 @@
 {
-    "Header": {
-        "MainHeader": {
-            "tag": "h1",
-            "innerHTML": "Mike Bidinger"
+    "Title": {
+        "id": "Title",
+        "innerHTML": {
+            "EN": "Resume of Mike Bidinger",
+            "NL": "CV van Mike Bidinger",
+            "DE": "Lebenslauf von Mike Bidinger"
         }
     },
-    "Content": {
-        "Sideview": {
-            "tag": "div",
-            "MyPhoto": {
-                "tag": "img",
-                "src": "https://raw.githubusercontent.com/MikeBidinger/Web_Dev/main/Resume/img/PhotoMe.jpg",
-                "alt": "My Photo"
-            },
-            "Personal": {
-                "tag": "div",
-                "PersonalHeader": {
-                    "tag": "h3",
+    "MainHeader": {
+        "innerHTML": "Mike Bidinger"
+    },
+    "MyPhoto": {
+        "src": "PhotoMe.jpg",
+        "alt": "My Photo"
+    },
+    "PersonalHeader": {
+        "id": "PersonalHeader",
+        "innerHTML": {
+            "EN": "Personal Details",
+            "NL": "Personalia",
+            "DE": "Persönliche Daten"
+        }
+    },
+    "Personal": {
+        "_children": {
+            "Location": {
+                "icon": {
+                    "src": "location.svg",
+                    "alt": "Location"
+                },
+                "link": {
+                    "id": "Location-link",
+                    "href": "https://www.google.com/maps/",
+                    "target": "_blank",
                     "innerHTML": {
-                        "EN": "Personalia",
-                        "NL": "Personalia",
-                        "DE": "Personalia"
-                    }
-                },
-                "LinkedIn": {
-                    "tag": "div",
-                    "LinkedInIconLink": {
-                        "tag": "a",
-                        "href": "https://www.linkedin.com/in/mike-bidinger-359906247/",
-                        "target": "_blank",
-                        "LinkeInIcon": {
-                            "tag": "img",
-                            "src": "https://raw.githubusercontent.com/MikeBidinger/MikeBidinger/main/icons/LinkedIn.svg",
-                            "alt": "in"
-                        }
-                    },
-                    "LinkedInText": {
-                        "tag": "a",
-                        "href": "https://www.linkedin.com/in/mike-bidinger-359906247/",
-                        "target": "_blank",
-                        "innerHTML": "LinkedIn"
-                    }
-                },
-                "GitHub": {
-                    "tag": "div",
-                    "GitHubIconLink": {
-                        "tag": "a",
-                        "href": "https://github.com/MikeBidinger/",
-                        "GitHubIcon": {
-                            "tag": "img",
-                            "src": "https://raw.githubusercontent.com/MikeBidinger/MikeBidinger/main/icons/Github-Dark.svg",
-                            "alt": "in"
-                        }
-                    },
-                    "GitHubText": {
-                        "tag": "a",
-                        "href": "https://github.com/MikeBidinger/",
-                        "innerHTML": "GitHub"
-                    }
-                },
-                "Birthday": {
-                    "tag": "div",
-                    "BirthdayIcon": {
-                        "tag": "i",
-                        "class": "material-icons",
-                        "innerHTML": "calendar_month"
-                    },
-                    "BirthdayText": {
-                        "tag": "span",
-                        "innerHTML": "1990-12-22"
-                    }
-                },
-                "Country": {
-                    "tag": "div",
-                    "CountryIcon": {
-                        "tag": "i",
-                        "class": "material-icons",
-                        "innerHTML": "language"
-                    },
-                    "CountryText": {
-                        "tag": "span",
-                        "innerHTML": {
-                            "EN": "Netherlands",
-                            "NL": "Nederland",
-                            "DE": "Niederlande"
-                        }
+                        "EN": "Street #<br>Postal Code<br>City",
+                        "NL": "Straat #<br>Postcode<br>Plaats",
+                        "DE": "Straße #<br>Postleitzahl<br>Stadt"
                     }
                 }
             },
-            "Languages": {
-                "tag": "div",
-                "LangHeader": {
-                    "tag": "h3",
-                    "innerHTML": {
-                        "EN": "Languages",
-                        "NL": "Talen",
-                        "DE": "Sprachen"
-                    }
+            "Mail": {
+                "icon": {
+                    "src": "mail.svg",
+                    "alt": "Mail"
                 },
-                "Lang1": {
-                    "tag": "div",
-                    "Lang1Text": {
-                        "tag": "p",
-                        "innerHTML": "NL"
-                    },
-                    "Lang1Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 5
-                        }
-                    }
-                },
-                "Lang2": {
-                    "tag": "div",
-                    "Lang2Text": {
-                        "tag": "p",
-                        "innerHTML": "EN"
-                    },
-                    "Lang2Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 4
-                        }
-                    }
-                },
-                "Lang3": {
-                    "tag": "div",
-                    "Lang3Text": {
-                        "tag": "p",
-                        "innerHTML": "DE"
-                    },
-                    "Lang3Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 4
-                        }
-                    }
+                "link": {
+                    "href": "mailto:mail@adress.com",
+                    "target": "_blank",
+                    "innerHTML": "mail@adress.com"
                 }
             },
-            "Skills": {
-                "tag": "div",
-                "SkillsHeader": {
-                    "tag": "h3",
-                    "innerHTML": {
-                        "EN": "Skills",
-                        "NL": "Vaardigheden",
-                        "DE": "Kompetenzen"
-                    }
+            "Phone": {
+                "icon": {
+                    "src": "phone.svg",
+                    "alt": "Phone"
                 },
-                "Skill1": {
-                    "tag": "div",
-                    "Skill1Text": {
-                        "tag": "p",
-                        "innerHTML": "Python"
-                    },
-                    "Skill1Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 4
-                        }
-                    }
-                },
-                "Skill2": {
-                    "tag": "div",
-                    "Skill2Text": {
-                        "tag": "p",
-                        "innerHTML": "Qlik Sense"
-                    },
-                    "Skill2Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 4
-                        }
-                    }
-                },
-                "Skill3": {
-                    "tag": "div",
-                    "Skill3Text": {
-                        "tag": "p",
-                        "innerHTML": "DataIKU"
-                    },
-                    "Skill3Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 4
-                        }
-                    }
-                },
-                "Skill4": {
-                    "tag": "div",
-                    "Skill4Text": {
-                        "tag": "p",
-                        "innerHTML": "MS VBA"
-                    },
-                    "Skill4Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 4
-                        }
-                    }
-                },
-                "Skill5": {
-                    "tag": "div",
-                    "Skill5Text": {
-                        "tag": "p",
-                        "innerHTML": "MS Office"
-                    },
-                    "Skill5Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 4
-                        }
-                    }
-                },
-                "Skill6": {
-                    "tag": "div",
-                    "Skill6Text": {
-                        "tag": "p",
-                        "innerHTML": "HTML"
-                    },
-                    "Skill6Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill7": {
-                    "tag": "div",
-                    "Skill7Text": {
-                        "tag": "p",
-                        "innerHTML": "CSS"
-                    },
-                    "Skill7Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill8": {
-                    "tag": "div",
-                    "Skill8Text": {
-                        "tag": "p",
-                        "innerHTML": "JavaScript"
-                    },
-                    "Skill8Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill9": {
-                    "tag": "div",
-                    "Skill9Text": {
-                        "tag": "p",
-                        "innerHTML": "MongoDB"
-                    },
-                    "Skill9Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill10": {
-                    "tag": "div",
-                    "Skill10Text": {
-                        "tag": "p",
-                        "innerHTML": "Mendix"
-                    },
-                    "Skill10Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill11": {
-                    "tag": "div",
-                    "Skill11Text": {
-                        "tag": "p",
-                        "innerHTML": "VBScripting"
-                    },
-                    "Skill11Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill12": {
-                    "tag": "div",
-                    "Skill12Text": {
-                        "tag": "p",
-                        "innerHTML": "Viscom"
-                    },
-                    "Skill12Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill13": {
-                    "tag": "div",
-                    "Skill13Text": {
-                        "tag": "p",
-                        "innerHTML": "EDIABAS"
-                    },
-                    "Skill13Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 3
-                        }
-                    }
-                },
-                "Skill14": {
-                    "tag": "div",
-                    "Skill14Text": {
-                        "tag": "p",
-                        "innerHTML": "SQL"
-                    },
-                    "Skill14Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 2
-                        }
-                    }
-                },
-                "Skill15": {
-                    "tag": "div",
-                    "Skill15Text": {
-                        "tag": "p",
-                        "innerHTML": "MS Visual C++"
-                    },
-                    "Skill15Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 2
-                        }
-                    }
-                },
-                "Skill16": {
-                    "tag": "div",
-                    "Skill16Text": {
-                        "tag": "p",
-                        "innerHTML": "MS Visual Basic"
-                    },
-                    "Skill16Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 2
-                        }
-                    }
-                },
-                "Skill17": {
-                    "tag": "div",
-                    "Skill17Text": {
-                        "tag": "p",
-                        "innerHTML": "MS Visual C#"
-                    },
-                    "Skill17Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 2
-                        }
-                    }
-                },
-                "Skill18": {
-                    "tag": "div",
-                    "Skill18Text": {
-                        "tag": "p",
-                        "innerHTML": "SAP"
-                    },
-                    "Skill18Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 2
-                        }
-                    }
-                },
-                "Skill19": {
-                    "tag": "div",
-                    "Skill19Text": {
-                        "tag": "p",
-                        "innerHTML": "LabView"
-                    },
-                    "Skill19Rating": {
-                        "tag": "div",
-                        "rating": {
-                            "amount": 5,
-                            "score": 1
-                        }
-                    }
-                }
-            }
-        },
-        "MainContent": {
-            "tag": "div",
-            "About": {
-                "tag": "div",
-                "AboutHeader": {
-                    "tag": "h2",
-                    "innerHTML": {
-                        "EN": "About Me",
-                        "NL": "Over Mij",
-                        "DE": "Über Mich"
-                    }
-                },
-                "AboutText": {
-                    "tag": "p",
-                    "innerHTML": {
-                        "EN": "A true analytical engineer with both data-management and change-management knowledge and experience. Apart from the fact that I already have quite a bit of knowledge, I keep challenging myself and others to broaden my knowledge. My goal is often to realize the best possible reporting and analysis environment for end users. Overseeing the entire process, from the source systems up to and including the analysis, is self-evident. I bring together the functional requirements, organizational interests and technical possibilities within data-driven solutions. This makes me the link between Business and IT and able to understand the question behind the question, to make the translation between customer and technology. In addition, I’m communicatively strong, proactive and I can work independently as well as together within a team.",
-                        "NL": "Een echte analytische engineer met zowel data-management als change-management kennis en ervaring. Los van het feit dat ik al aardig wat kennis heb, blijf ik mezelf en anderen continue uitdagen om mijn kennis te verbreden. Mijn doel is een vaak een zo goed mogelijke rapportage- en analyse omgeving te realiseren voor eindgebruikers. Het overzien van het volledige proces, vanaf de bronsystemen tot en met de analyse, is hierbij vanzelfsprekend. Ik breng de functionele wensen, organisatorische belangen en technische mogelijkheden bij elkaar binnen data-gedreven oplossingen. Hiermee ben ik dus de schakel tussen de Business en IT en in staat de vraag achter de vraag te begrijpen, om de vertaalslag te maken tussen klant en techniek. Daarnaast ben ik communicatief sterk, proactief en kan ik zowel goed zelfstandig als ook samen werken binnen een team.",
-                        "DE": "Ein echter analytischer Ingenieur mit Kenntnissen und Erfahrungen im Bereich Datenmanagement und Änderungsmanagement. Abgesehen davon, dass ich bereits über einiges an Wissen verfüge, fordere ich mich selbst und andere immer wieder heraus, mein Wissen zu erweitern. Mein Ziel ist oft, die bestmögliche Reporting- und Analyse Umgebung für Endbenutzers zu realisieren. Die Betreuung des gesamten Prozesses von den Quellsystemen bis hin zur Analyse ist selbstverständlich. Ich bringe die funktionalen Anforderungen, organisatorischen Interessen und technischen Möglichkeiten in datengesteuerte Lösungen zusammen. Damit bin ich das Bindeglied zwischen Business und IT und in der Lage, die Frage hinter der Frage zu verstehen, um die Übersetzung zwischen Kunde und Technologie vorzunehmen. Darüber hinaus bin ich kommunikationsstark, proaktiv und kann sowohl selbstständig als auch im Team zusammenarbeiten."
-                    }
+                "link": {
+                    "href": "tel://0612345678/",
+                    "target": "_blank",
+                    "innerHTML": "+31 (0)6-12345678"
                 }
             },
-            "Work": {
-                "tag": "div",
-                "WorkHeader": {
-                    "tag": "h2",
-                    "innerHTML": {
-                        "EN": "Work Experience",
-                        "NL": "Werkervaring",
-                        "DE": "Berufderfahrung"
-                    }
+            "LinkedIn": {
+                "icon": {
+                    "src": "linkedin.svg",
+                    "alt": "LinkedIn"
                 },
-                "Work4": {
-                    "tag": "div",
-                    "Work4Header": {
-                        "tag": "h4",
-                        "innerHTML": {
-                            "EN": "VDL Nedcar, Born, Feb 2018 - present",
-                            "NL": "VDL Nedcar, Born, feb 2018 - heden",
-                            "DE": "VDL Nedcar, Born, Feb 2018 - present"
-                        }
-                    },
-                    "Work4Title": {
-                        "tag": "h5",
-                        "innerHTML": {
-                            "EN": "BDQS - Product Data Quality Manager (Launch and Change Control, Supply)",
-                            "NL": "BDQS - Productdata Kwaliteitsmanager (Launch and Change Control, Supply)",
-                            "DE": "BDQS - Produktdatenqualitätsmanager (Launch and Change Control, Supply)"
-                        }
-                    },
-                    "Work4Desc": {
-                        "tag": "p",
-                        "innerHTML": {
-                            "EN": "Product-data-management specialist and responsible for the product-data-quality. Managing and developing automation processes for efficiency and quality of product related data (back-end). In addition, also responsible for providing the business with accurate information by transforming data into information to enable data-driven decision making (front-end).",
-                            "NL": "Product-data-management specialist en verantwoordelijk voor de product-data-kwaliteit. Beheren en ontwikkelen van automatiseringsprocessen voor de efficiëntie en kwaliteit van product gerelateerde data (back-end). Eveneens verantwoordelijk van het voorzien van accurate informatie naar de business door data te transformeren naar informatie om in staat te zijn om data-gedreven besluitvormingen te maken (front-end).",
-                            "DE": "Produktdatenmanagement Spezialist und verantwortlich für die Produktdatenqualität. Verwaltung und Entwicklung von Automatisierungsprozessen für Effizienz und Qualität produktbezogener Daten (back-end). Darüber hinaus auch dafür verantwortlich, dass die Geschäfte mit genauen Informationen zu versorgen, indem Daten in Informationen umgewandelt werden, um datengesteuerte Entscheidungsfindung zu ermöglichen (front-end)."
-                        }
-                    }
-                },
-                "Work3": {
-                    "tag": "div",
-                    "Work3Header": {
-                        "tag": "h4",
-                        "innerHTML": {
-                            "EN": "VDL Nedcar, Born, Dec 2017 - Feb 2018",
-                            "NL": "VDL Nedcar, Born, dec 2017 - feb 2018",
-                            "DE": "VDL Nedcar, Born, Dez 2017 - Feb 2018"
-                        }
-                    },
-                    "Work3Title": {
-                        "tag": "h5",
-                        "innerHTML": {
-                            "EN": "Change Controller E/E (Launch and Change Control, Supply)",
-                            "NL": "Wijzigings Coördinator E/E (Launch and Change Control, Supply)",
-                            "DE": "Einsatz Änderung Steuerer E/E (Launch and Change Control, Supply)"
-                        }
-                    },
-                    "Work3Desc": {
-                        "tag": "p",
-                        "innerHTML": {
-                            "EN": "Responsible for the validation, implementation and processing of product-engineering-changes. In addition, a hardware/software product-implementation specialist.",
-                            "NL": "Verantwoordelijk voor het valideren, implementeren en verwerken van productwijzigingen t.b.v. de ontwikkeling van het product. Additioneel een specialist op het gebied van hardware/software productimplementaties.",
-                            "DE": "Verantwortlich für die Validierung, Implementierung und Abwicklung von technischen Produktänderungen. Darüber hinaus ein Hardware-/Software-Produktimplementierungsspezialist."
-                        }
-                    }
-                },
-                "Work2": {
-                    "tag": "div",
-                    "Work2Header": {
-                        "tag": "h4",
-                        "innerHTML": {
-                            "EN": "VDL Nedcar, Born, Jan 2017 - Dec 2017",
-                            "NL": "VDL Nedcar, Born, jan 2017 - dec 2017",
-                            "DE": "VDL Nedcar, Born, Jan 2017 - Dez 2017"
-                        }
-                    },
-                    "Work2Title": {
-                        "tag": "h5",
-                        "innerHTML": {
-                            "EN": "SQA Line Complaints E/E (Supplier Quality Assurance)",
-                            "NL": "SQA Line Complaints E/E (Supplier Quality Assurance)",
-                            "DE": "SQA Line Complaints E/E (Lieferanten-Qualitätssicherung)"
-                        }
-                    },
-                    "Work2Desc": {
-                        "tag": "p",
-                        "innerHTML": {
-                            "EN": "Production disruption support through product quality issues. When by analysis is determined that the is supplier related, complaint costs to the relevant supplier. In addition, responsible for updating software components as a result of engineering changes to the product(s), as well as providing support to the “Rework and Repair” department with the product defect analysis of software components.",
-                            "NL": "Ondersteuning bij productie verstoringen d.m.v. product kwaliteitsproblemen en bij vaststelling, door analyse, van leveranciersoorzaken, dit door reclameren richting desbetreffende leverancier. Eveneens verantwoordelijk het updaten van elektronische producten (herprogrammering) als gevolg van engineeringswijzigingen op het product (of producten). Daarbij ook analyseondersteuning aan de afdeling “Rework & Repair” bij product defectanalyse van softwarecomponenten.",
-                            "DE": "Unterstützung bei Produktionsunterbrechungen durch Probleme mit der Produktqualität und wenn die Ursache durch Analyse vom Lieferanten bestimmt wird, Kostenreklamation beim jeweiligen Lieferanten. Darüber hinaus verantwortlich für die Aktualisierung von Softwarekomponenten infolge technischer Änderungen am Produkt(en), sowie die Unterstützung der Abteilung „Rework and Repair“ bei der Produktfehleranalyse von Softwarekomponenten."
-                        }
-                    }
-                },
-                "Work1": {
-                    "tag": "div",
-                    "Work1Header": {
-                        "tag": "h4",
-                        "innerHTML": {
-                            "EN": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017",
-                            "NL": "Prodrive Technologies, Son, Science Park Eindhoven, aug 2012 - jan 2017",
-                            "DE": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017"
-                        }
-                    },
-                    "Work1Title": {
-                        "tag": "h5",
-                        "innerHTML": {
-                            "EN": "Work Preparator, Test Engineer (SMD Assembly)",
-                            "NL": "Werkvoorbereider, Test Engineer (SMD Assemblage)",
-                            "DE": "Arbeitsvorbereitung, Testingenieur (SMD Montage)"
-                        }
-                    },
-                    "Work1Desc": {
-                        "tag": "p",
-                        "innerHTML": {
-                            "EN": "Responsible for the quality checks through visual test equipment and programming as well as optimizing the SMD production processes through problem analysis (quality and efficiency improvements). In addition, responsible as a work preparator to ensure a high quality and efficiency standard to the start of production for the SMD production processes of new products.",
-                            "NL": "Verantwoordelijk voor de kwaliteitscontroles middels optische testmachines en testprogrammatuur en optimaliseren van de SMD-productieprocessen middels probleemanalyses (kwaliteit- en efficiëntieverbeteringen). Eveneens verantwoordelijk als Work Preperator voor een hoge kwaliteits- en efficiëntie-standaard bij de productiestart voor de SMD-productie processen van nieuwe producten.",
-                            "DE": "Verantwortlich für die Qualitätsprüfungen durch Sichtprüfgeräte und Programmierung sowie Optimierung der SMD-Fertigungsprozesse durch Problemanalyse (Qualitäts- and Effizienzverbesserungen). Darüber hinaus verantwortlich als Arbeitsvorbereiter die Sicherstellung eines hohen Qualitäts- und Effizienzstandard bis zum Serienanlauf für die SMD-Fertigungsprozesse neuer Produkte."
-                        }
-                    }
+                "link": {
+                    "href": "https://www.linkedin.com/in/mike-bidinger-359906247/",
+                    "target": "_blank",
+                    "innerHTML": "LinkedIn"
                 }
             },
-            "Education": {
-                "tag": "div",
-                "EduHeader": {
-                    "tag": "h2",
-                    "innerHTML": {
-                        "EN": "Education",
-                        "NL": "Opleiding",
-                        "DE": "Schulbildung"
-                    }
+            "GitHub": {
+                "icon": {
+                    "src": "github.svg",
+                    "alt": "GitHub"
                 },
-                "Edu1": {
-                    "tag": "div",
-                    "Edu1Title": {
-                        "tag": "h4",
-                        "innerHTML": "Bachelor (HBO) Electrical Engineering"
-                    },
-                    "Edu1Text": {
-                        "tag": "p",
-                        "innerHTML": {
-                            "EN": "2008 - 2012, Hogeschool Zuyd, Heerlen, Graduated: Yes/<span>No</span>",
-                            "NL": "2008 - 2012, Hogeschool Zuyd, Heerlen, Geslaagd: Ja/<span>Nee</span>",
-                            "DE": "2008 - 2012, Hogeschool Zuyd, Heerlen, Graduiert: Ja/<span>Nein</span>"
-                        }
-                    }
+                "link": {
+                    "href": "https://github.com/MikeBidinger/",
+                    "target": "_blank",
+                    "innerHTML": "GitHub"
                 }
             },
-            "Cources": {
-                "tag": "div",
-                "CourcesHeader": {
-                    "tag": "h2",
+            "Birthday": {
+                "icon": {
+                    "src": "calendar.svg",
+                    "alt": "Calendar"
+                },
+                "text": {
+                    "innerHTML": "YYYY-MM-DD"
+                }
+            },
+            "Country": {
+                "icon": {
+                    "src": "globe.svg",
+                    "alt": "Globe"
+                },
+                "text": {
+                    "id": "Country",
                     "innerHTML": {
-                        "EN": "Courses",
-                        "NL": "Cursussen",
-                        "DE": "Kurse"
-                    }
-                },
-                "Course5": {
-                    "tag": "div",
-                    "Course5Title": {
-                        "tag": "p",
-                        "innerHTML": "2022 - Qlik Sense Developer"
-                    }
-                },
-                "Course4": {
-                    "tag": "div",
-                    "Course4Title": {
-                        "tag": "p",
-                        "innerHTML": "2020 - Qlik Sense Front End Developer"
-                    }
-                },
-                "Course3": {
-                    "tag": "div",
-                    "Course3Title": {
-                        "tag": "p",
-                        "innerHTML": "2019 - Mendix Rapid Developer"
-                    }
-                },
-                "Course2": {
-                    "tag": "div",
-                    "Course2Title": {
-                        "tag": "p",
-                        "innerHTML": "2016 - Viscom Release Training"
-                    }
-                },
-                "Course1": {
-                    "tag": "div",
-                    "Course1Title": {
-                        "tag": "p",
-                        "innerHTML": "2012 - Viscom Basic Training"
+                        "EN": "Netherlands",
+                        "NL": "Nederlandse",
+                        "DE": "Niederländisch"
                     }
                 }
             }
         }
+    },
+    "LangHeader": {
+        "id": "LangHeader",
+        "innerHTML": {
+            "EN": "Languages",
+            "NL": "Talen",
+            "DE": "Sprachen"
+        }
+    },
+    "Languages": {
+        "_children": {
+            "NL": {
+                "icon": {
+                    "src": "flag-nl.svg",
+                    "alt": "flag-nl"
+                },
+                "text": {
+                    "innerHTML": "NL"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 5
+                },
+                "tooltip": {
+                    "id": "NL",
+                    "innerHTML": {
+                        "EN": "Dutch",
+                        "NL": "Nederlands",
+                        "DE": "Niederländisch"
+                    }
+                }
+            },
+            "EN": {
+                "icon": {
+                    "src": "flag-uk.svg",
+                    "alt": "flag-uk"
+                },
+                "text": {
+                    "innerHTML": "EN"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 4
+                },
+                "tooltip": {
+                    "id": "EN",
+                    "innerHTML": {
+                        "EN": "English",
+                        "NL": "Engels",
+                        "DE": "Englisch"
+                    }
+                }
+            },
+            "DE": {
+                "icon": {
+                    "src": "flag-de.svg",
+                    "alt": "flag-de"
+                },
+                "text": {
+                    "innerHTML": "DE"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 4
+                },
+                "tooltip": {
+                    "id": "DE",
+                    "innerHTML": {
+                        "EN": "German",
+                        "NL": "Duits",
+                        "DE": "Deutsch"
+                    }
+                }
+            }
+        }
+    },
+    "SkillsHeader": {
+        "id": "SkillsHeader",
+        "innerHTML": {
+            "EN": "Skills",
+            "NL": "Vaardigheden",
+            "DE": "Kompetenzen"
+        }
+    },
+    "Skills": {
+        "_children": {
+            "Python": {
+                "icon": {
+                    "src": "python.svg",
+                    "alt": "Python"
+                },
+                "link": {
+                    "href": "https://www.python.org/",
+                    "target": "_blank",
+                    "innerHTML": "Python"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 4
+                }
+            },
+            "Qlik": {
+                "icon": {
+                    "src": "qlik.svg",
+                    "alt": "Qlik"
+                },
+                "link": {
+                    "href": "https://www.qlik.com/products/qlik-sense/",
+                    "target": "_blank",
+                    "innerHTML": "Qlik"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 4
+                },
+                "tooltip": {
+                    "innerHTML": "Qlik Sense"
+                }
+            },
+            "VBA": {
+                "icon": {
+                    "src": "vba.svg",
+                    "alt": "VBA"
+                },
+                "link": {
+                    "href": "https://learn.microsoft.com/office/vba/",
+                    "target": "_blank",
+                    "innerHTML": "MS VBA"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 4
+                },
+                "tooltip": {
+                    "innerHTML": "Visual Basic for Applications"
+                }
+            },
+            "MS-Office": {
+                "icon": {
+                    "src": "msoffice.svg",
+                    "alt": "MS-Office"
+                },
+                "link": {
+                    "href": "https://www.microsoft.com/microsoft-365/microsoft-office/",
+                    "target": "_blank",
+                    "innerHTML": "MS Office"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 4
+                },
+                "tooltip": {
+                    "innerHTML": "Microsoft Office"
+                }
+            },
+            "Talend": {
+                "icon": {
+                    "src": "talend.svg",
+                    "alt": "Talend"
+                },
+                "link": {
+                    "href": "https://www.talend.com/",
+                    "target": "_blank",
+                    "innerHTML": "Talend"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "HTML": {
+                "icon": {
+                    "src": "html5.svg",
+                    "alt": "HTML"
+                },
+                "link": {
+                    "href": "https://www.w3schools.com/html/",
+                    "target": "_blank",
+                    "innerHTML": "HTML"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "CSS": {
+                "icon": {
+                    "src": "css3.svg",
+                    "alt": "CSS"
+                },
+                "link": {
+                    "href": "https://www.w3schools.com/css/",
+                    "target": "_blank",
+                    "innerHTML": "CSS"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "JavaScript": {
+                "icon": {
+                    "src": "js.svg",
+                    "alt": "JavaScript"
+                },
+                "link": {
+                    "href": "https://www.w3schools.com/js/",
+                    "target": "_blank",
+                    "innerHTML": "JavaScript"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "Django": {
+                "icon": {
+                    "src": "django.svg",
+                    "alt": "Django"
+                },
+                "link": {
+                    "href": "https://www.djangoproject.com/",
+                    "target": "_blank",
+                    "innerHTML": "Django"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "SQL": {
+                "icon": {
+                    "src": "sql.svg",
+                    "alt": "SQL"
+                },
+                "link": {
+                    "href": "https://www.w3schools.com/sql/",
+                    "target": "_blank",
+                    "innerHTML": "SQL"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "MongoDB": {
+                "icon": {
+                    "src": "mongodb.svg",
+                    "alt": "MongoDB"
+                },
+                "link": {
+                    "href": "https://www.mongodb.com/",
+                    "target": "_blank",
+                    "innerHTML": "MongoDB"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "Dataiku": {
+                "icon": {
+                    "src": "dataiku.svg",
+                    "alt": "Dataiku"
+                },
+                "link": {
+                    "href": "https://www.dataiku.com/",
+                    "target": "_blank",
+                    "innerHTML": "Dataiku"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "Mendix": {
+                "icon": {
+                    "src": "mendix.svg",
+                    "alt": "Mendix"
+                },
+                "link": {
+                    "href": "https://www.mendix.com/",
+                    "target": "_blank",
+                    "innerHTML": "Mendix"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 3
+                }
+            },
+            "C++": {
+                "icon": {
+                    "src": "cplusplus.svg",
+                    "alt": "C++"
+                },
+                "link": {
+                    "href": "https://learn.microsoft.com/en-us/cpp/",
+                    "target": "_blank",
+                    "innerHTML": "C++"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 2
+                },
+                "tooltip": {
+                    "innerHTML": "Microsoft Visual C++"
+                }
+            },
+            "C#": {
+                "icon": {
+                    "src": "csharp.svg",
+                    "alt": "C#"
+                },
+                "link": {
+                    "href": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+                    "target": "_blank",
+                    "innerHTML": "C#"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 2
+                },
+                "tooltip": {
+                    "innerHTML": "Microsoft Visual C#"
+                }
+            },
+            "SAP": {
+                "icon": {
+                    "src": "sap.svg",
+                    "alt": "SAP"
+                },
+                "link": {
+                    "href": "https://www.sap.com/",
+                    "target": "_blank",
+                    "innerHTML": "SAP"
+                },
+                "rating": {
+                    "amount": 5,
+                    "score": 2
+                }
+            }
+        }
+    },
+    "AboutHeader": {
+        "id": "AboutHeader",
+        "innerHTML": {
+            "EN": "About Me",
+            "NL": "Over Mij",
+            "DE": "Über Mich"
+        }
+    },
+    "AboutText": {
+        "id": "AboutText",
+        "innerHTML": {
+            "EN": "A true analytical engineer with both data-management and change-management knowledge and experience. Apart from the fact that I already have quite a bit of knowledge, I keep challenging myself and others to broaden my knowledge. My goal is often to realize the best possible reporting and analysis environment for end users. Overseeing the entire process, from the source systems up to and including the analysis, is self-evident. I bring together the functional requirements, organizational interests and technical possibilities within data-driven solutions. This makes me the link between Business and IT and able to understand the question behind the question, to make the translation between customer and technology. In addition, I’m communicatively strong, proactive and I can work independently as well as together within a team.",
+            "NL": "Een echte analytische engineer met zowel data-management als change-management kennis en ervaring. Los van het feit dat ik al aardig wat kennis heb, blijf ik mezelf en anderen continue uitdagen om mijn kennis te verbreden. Mijn doel is een vaak een zo goed mogelijke rapportage- en analyse omgeving te realiseren voor eindgebruikers. Het overzien van het volledige proces, vanaf de bronsystemen tot en met de analyse, is hierbij vanzelfsprekend. Ik breng de functionele wensen, organisatorische belangen en technische mogelijkheden bij elkaar binnen data-gedreven oplossingen. Hiermee ben ik dus de schakel tussen de Business en IT en in staat de vraag achter de vraag te begrijpen, om de vertaalslag te maken tussen klant en techniek. Daarnaast ben ik communicatief sterk, proactief en kan ik zowel goed zelfstandig als ook samen werken binnen een team.",
+            "DE": "Ein echter analytischer Ingenieur mit Kenntnissen und Erfahrungen im Bereich Datenmanagement und Änderungsmanagement. Abgesehen davon, dass ich bereits über einiges an Wissen verfüge, fordere ich mich selbst und andere immer wieder heraus, mein Wissen zu erweitern. Mein Ziel ist oft, die bestmögliche Reporting- und Analyse Umgebung für Endbenutzers zu realisieren. Die Betreuung des gesamten Prozesses von den Quellsystemen bis hin zur Analyse ist selbstverständlich. Ich bringe die funktionalen Anforderungen, organisatorischen Interessen und technischen Möglichkeiten in datengesteuerte Lösungen zusammen. Damit bin ich das Bindeglied zwischen Business und IT und in der Lage, die Frage hinter der Frage zu verstehen, um die Übersetzung zwischen Kunde und Technologie vorzunehmen. Darüber hinaus bin ich kommunikationsstark, proaktiv und kann sowohl selbstständig als auch im Team zusammenarbeiten."
+        }
+    },
+    "WorkHeader": {
+        "id": "WorkHeader",
+        "innerHTML": {
+            "EN": "Work Experience",
+            "NL": "Werkervaring",
+            "DE": "Berufserfahrung"
+        }
+    },
+    "Work": {
+        "_children": {
+            "BDQS": {
+                "header": {
+                    "id": "BDQS-header",
+                    "innerHTML": {
+                        "EN": "VDL Nedcar, Born, Feb 2018 - present",
+                        "NL": "VDL Nedcar, Born, feb 2018 - heden",
+                        "DE": "VDL Nedcar, Born, Feb 2018 - present"
+                    }
+                },
+                "title": {
+                    "id": "BDQS-title",
+                    "innerHTML": {
+                        "EN": "BDQS - Product Data Quality Manager (Launch and Change Control, Supply)",
+                        "NL": "BDQS - Productdata Kwaliteitsmanager (Launch and Change Control, Supply)",
+                        "DE": "BDQS - Produktdatenqualitätsmanager (Launch and Change Control, Supply)"
+                    }
+                },
+                "desc": {
+                    "id": "BDQS-desc",
+                    "innerHTML": {
+                        "EN": "Product-data-management specialist and responsible for the product-data-quality. Managing and developing automation processes for efficiency and quality of product related data (back-end). In addition, also responsible for providing the business with accurate information by transforming data into information to enable data-driven decision making (front-end).",
+                        "NL": "Product-data-management specialist en verantwoordelijk voor de product-data-kwaliteit. Beheren en ontwikkelen van automatiseringsprocessen voor de efficiëntie en kwaliteit van product gerelateerde data (back-end). Eveneens verantwoordelijk van het voorzien van accurate informatie naar de business door data te transformeren naar informatie om in staat te zijn om data-gedreven besluitvormingen te maken (front-end).",
+                        "DE": "Produktdatenmanagement Spezialist und verantwortlich für die Produktdatenqualität. Verwaltung und Entwicklung von Automatisierungsprozessen für Effizienz und Qualität produktbezogener Daten (back-end). Darüber hinaus auch dafür verantwortlich, dass die Geschäfte mit genauen Informationen zu versorgen, indem Daten in Informationen umgewandelt werden, um datengesteuerte Entscheidungsfindung zu ermöglichen (front-end)."
+                    }
+                }
+            },
+            "EAS": {
+                "header": {
+                    "id": "EAS-header",
+                    "innerHTML": {
+                        "EN": "VDL Nedcar, Born, Dec 2017 - Feb 2018",
+                        "NL": "VDL Nedcar, Born, dec 2017 - feb 2018",
+                        "DE": "VDL Nedcar, Born, Dez 2017 - Feb 2018"
+                    }
+                },
+                "title": {
+                    "id": "EAS-title",
+                    "innerHTML": {
+                        "EN": "Change Controller E/E (Launch and Change Control, Supply)",
+                        "NL": "Wijzigings Coördinator E/E (Launch and Change Control, Supply)",
+                        "DE": "Einsatz Änderung Steuerer E/E (Launch and Change Control, Supply)"
+                    }
+                },
+                "desc": {
+                    "id": "EAS-desc",
+                    "innerHTML": {
+                        "EN": "Responsible for the validation, implementation and processing of product-engineering-changes. In addition, a hardware/software product-implementation specialist.",
+                        "NL": "Verantwoordelijk voor het valideren, implementeren en verwerken van productwijzigingen t.b.v. de ontwikkeling van het product. Additioneel een specialist op het gebied van hardware/software productimplementaties.",
+                        "DE": "Verantwortlich für die Validierung, Implementierung und Abwicklung von technischen Produktänderungen. Darüber hinaus ein Hardware-/Software-Produktimplementierungsspezialist."
+                    }
+                }
+            },
+            "SQA": {
+                "header": {
+                    "id": "SQA-header",
+                    "innerHTML": {
+                        "EN": "VDL Nedcar, Born, Jan 2017 - Dec 2017",
+                        "NL": "VDL Nedcar, Born, jan 2017 - dec 2017",
+                        "DE": "VDL Nedcar, Born, Jan 2017 - Dez 2017"
+                    }
+                },
+                "title": {
+                    "id": "SQA-title",
+                    "innerHTML": {
+                        "EN": "SQA Line Complaints E/E (Supplier Quality Assurance)",
+                        "NL": "SQA Line Complaints E/E (Supplier Quality Assurance)",
+                        "DE": "SQA Line Complaints E/E (Lieferanten-Qualitätssicherung)"
+                    }
+                },
+                "desc": {
+                    "id": "SQA-desc",
+                    "innerHTML": {
+                        "EN": "Production disruption support through product quality issues. When by analysis is determined that the is supplier related, complaint costs to the relevant supplier. In addition, responsible for updating software components as a result of engineering changes to the product(s), as well as providing support to the “Rework and Repair” department with the product defect analysis of software components.",
+                        "NL": "Ondersteuning bij productie verstoringen d.m.v. product kwaliteitsproblemen en bij vaststelling, door analyse, van leveranciersoorzaken, dit door reclameren richting desbetreffende leverancier. Eveneens verantwoordelijk het updaten van elektronische producten (herprogrammering) als gevolg van engineeringswijzigingen op het product (of producten). Daarbij ook analyseondersteuning aan de afdeling “Rework & Repair” bij product defectanalyse van softwarecomponenten.",
+                        "DE": "Unterstützung bei Produktionsunterbrechungen durch Probleme mit der Produktqualität und wenn die Ursache durch Analyse vom Lieferanten bestimmt wird, Kostenreklamation beim jeweiligen Lieferanten. Darüber hinaus verantwortlich für die Aktualisierung von Softwarekomponenten infolge technischer Änderungen am Produkt(en), sowie die Unterstützung der Abteilung „Rework and Repair“ bei der Produktfehleranalyse von Softwarekomponenten."
+                    }
+                }
+            },
+            "TE": {
+                "header": {
+                    "id": "TE-header",
+                    "innerHTML": {
+                        "EN": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017",
+                        "NL": "Prodrive Technologies, Son, Science Park Eindhoven, aug 2012 - jan 2017",
+                        "DE": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017"
+                    }
+                },
+                "title": {
+                    "id": "TE-title",
+                    "innerHTML": {
+                        "EN": "Work Preparator, Test Engineer (SMD Assembly)",
+                        "NL": "Werkvoorbereider, Test Engineer (SMD Assemblage)",
+                        "DE": "Arbeitsvorbereitung, Testingenieur (SMD Montage)"
+                    }
+                },
+                "desc": {
+                    "id": "TE-desc",
+                    "innerHTML": {
+                        "EN": "Responsible for the quality checks through visual test equipment and programming as well as optimizing the SMD production processes through problem analysis (quality and efficiency improvements). In addition, responsible as a work preparator to ensure a high quality and efficiency standard to the start of production for the SMD production processes of new products.",
+                        "NL": "Verantwoordelijk voor de kwaliteitscontroles middels optische testmachines en testprogrammatuur en optimaliseren van de SMD-productieprocessen middels probleemanalyses (kwaliteit- en efficiëntieverbeteringen). Eveneens verantwoordelijk als Work Preperator voor een hoge kwaliteits- en efficiëntie-standaard bij de productiestart voor de SMD-productie processen van nieuwe producten.",
+                        "DE": "Verantwortlich für die Qualitätsprüfungen durch Sichtprüfgeräte und Programmierung sowie Optimierung der SMD-Fertigungsprozesse durch Problemanalyse (Qualitäts- and Effizienzverbesserungen). Darüber hinaus verantwortlich als Arbeitsvorbereiter die Sicherstellung eines hohen Qualitäts- und Effizienzstandard bis zum Serienanlauf für die SMD-Fertigungsprozesse neuer Produkte."
+                    }
+                }
+            }
+        }
+    },
+    "EduHeader": {
+        "id": "EduHeader",
+        "innerHTML": {
+            "EN": "Education",
+            "NL": "Opleiding",
+            "DE": "Ausbildung"
+        }
+    },
+    "Education": {
+        "_children": {
+            "HBO": {
+                "title": {
+                    "innerHTML": "Bachelor of Science (HBO) - Electrical Engineering"
+                },
+                "desc": {
+                    "id": "HBO-desc",
+                    "innerHTML": {
+                        "EN": "2008 - 2012, Hogeschool Zuyd, Heerlen, The Netherlands, Graduated: Yes/<span>No</span>",
+                        "NL": "2008 - 2012, Hogeschool Zuyd, Heerlen, Nederland, Geslaagd: Ja/<span>Nee</span>",
+                        "DE": "2008 - 2012, Hogeschool Zuyd, Heerlen, Die Niederlande, Graduiert: Ja/<span>Nein</span>"
+                    }
+                }
+            },
+            "HAVO": {
+                "title": {
+                    "id": "HAVO-title",
+                    "innerHTML": {
+                        "EN": "HAVO - Nature and Technology / Nature and Health",
+                        "NL": "HAVO - Natuur en Techniek / Natuur en Gezondheid",
+                        "DE": "HAVO - Natur und Technik / Natur und Gesundheid"
+                    }
+                },
+                "desc": {
+                    "id": "HAVO-desc",
+                    "innerHTML": {
+                        "EN": "2004 - 2008, Trevianum Scholengroep, Sittard, The Netherlands, Graduated: Yes/<span>No</span>",
+                        "NL": "2004 - 2008, Trevianum Scholengroep, Sittard, Nederland, Geslaagd: Ja/<span>Nee</span>",
+                        "DE": "2004 - 2008, Trevianum Scholengroep, Sittard, Die Niederlande, Graduiert: Ja/<span>Nein</span>"
+                    }
+                }
+            }
+        }
+    },
+    "CourseHeader": {
+        "id": "CourseHeader",
+        "innerHTML": {
+            "EN": "Courses",
+            "NL": "Cursussen",
+            "DE": "Kurse"
+        }
+    },
+    "Courses": {
+        "_children": {
+            "QlikDev": {
+                "title": {
+                    "innerHTML": "2022 - Qlik Sense Developer"
+                }
+            },
+            "Qlik": {
+                "title": {
+                    "innerHTML": "2020 - Qlik Sense Front End Developer"
+                }
+            },
+            "Mendix": {
+                "title": {
+                    "innerHTML": "2019 - Mendix Rapid Developer"
+                }
+            },
+            "ViscomRel": {
+                "title": {
+                    "innerHTML": "2016 - Viscom Release Training"
+                }
+            },
+            "Viscom": {
+                "title": {
+                    "innerHTML": "2012 - Viscom Basic Training"
+                }
+            }
+        }
+    },
+    "FootHeader": {
+        "innerHTML": "Contact"
     },
     "Footer": {
-        "FooterHeader": {
-            "tag": "h2",
-            "innerHTML": "Contact"
+        "_children": {
+            "Mail": {
+                "icon": {
+                    "src": "mail.svg",
+                    "alt": "Mail"
+                },
+                "link": {
+                    "href": "mailto:mail@adress.com",
+                    "target": "_blank",
+                    "innerHTML": "mail@adress.com"
+                }
+            },
+            "Phone": {
+                "icon": {
+                    "src": "phone.svg",
+                    "alt": "Phone"
+                },
+                "link": {
+                    "href": "tel://0612345678/",
+                    "target": "_blank",
+                    "innerHTML": "+31 (0)6-123456578"
+                }
+            }
         }
     }
 }
