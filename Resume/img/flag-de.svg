@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 -4 10.5 10.5" xmlns="http://www.w3.org/2000/svg">
+  <title>Flag DE</title>
+  <path
+    d="M 0,6.5 H 10.5 V 3 H 0 Z"
+    fill="#ffd61f" />
+  <path
+    d="M 0,3 H 10.5 V -0.5 H 0 Z"
+    fill="#f01414" />
+  <path
+    d="M 0,-0.50000001 H 10.5 V -4 H 0 Z"
+    fill="#262626" />
+</svg>
