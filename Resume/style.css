@@ -1,0 +1,319 @@
+:root {
+    --white: #dddddd;
+    --green: #04aa6d;
+    --gray: #38444d;
+    --nav: #15202b;
+    --dark: #0d1721;
+    --text: #cccccc;
+}
+body {
+    padding: 10px;
+    background: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+p {
+    color: var(--text);
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+.icon {
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 6px;
+}
+#Footer .icon {
+    background-color: var(--text);
+    border-radius: 0;
+}
+div div div div:hover .icon,
+div div div a:hover .icon,
+#Footer a:hover .icon {
+    background-color: var(--green);
+}
+/* ------------------------------------------------------------------- Header */
+#Header {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+#MainHeader {
+    text-shadow: 1px 1px 2px black, 0 0 50px var(--green);
+}
+/* ----------------------------------------------------------- Navigation Bar */
+#Nav,
+#Dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--green);
+    background: var(--nav);
+    font-weight: bold;
+}
+#Nav div {
+    border: none;
+}
+#Nav a {
+    padding: 10px 10px;
+}
+#Nav a:hover {
+    background: var(--green);
+    color: var(--dark);
+}
+#Nav #LinkPersonal,
+#Nav #LinkLanguages,
+#Nav #LinkSkills,
+#Nav #LinkAbout,
+#Nav #LinkWork,
+#Nav #LinkEducation,
+#Nav #LinkCourses,
+#Nav #LinkFooter {
+    display: none;
+}
+/* ------------------------------------------------------- Language selection */
+#Dropdown #DropLink {
+    background-color: var(--green);
+    color: var(--dark);
+}
+#Dropdown #DropButtons {
+    display: none;
+    background-color: var(--green);
+}
+#Dropdown:hover #DropButtons {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    position: absolute;
+    top: 38px;
+}
+#Dropdown #DropButtons button {
+    margin: 5px;
+    width: 86px;
+    height: 40px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    background-color: var(--gray);
+    color: var(--white);
+    cursor: pointer;
+}
+#Dropdown #DropButtons button:hover {
+    background-color: var(--dark);
+    color: inherit;
+}
+#Dropdown #DropButtons button:active {
+    background-color: var(--text);
+    color: var(--dark);
+}
+/* ------------------------------------------------------------------ Content */
+#MyPhoto {
+    border-radius: 15px;
+}
+#Content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+#Content h2,
+#Content h3 {
+    text-shadow: 1px 1px 2px black, 0 0 15px var(--green);
+    color: white;
+}
+#Content h3 {
+    display: flex;
+    justify-content: center;
+}
+#Content h4 {
+    font-size: 19px;
+    text-shadow: 1px 1px 2px black;
+}
+#Content h5 {
+    font-size: 16px;
+}
+#Content div {
+    border-radius: 15px;
+}
+#Content div div div {
+    border-radius: 0;
+}
+/* ------------------------------------------------------ Content => Sideview */
+#Sideview {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px 0 var(--green);
+    background: var(--gray);
+}
+#Sideview h3 {
+    border-bottom: 1px solid var(--green);
+}
+#Sideview p {
+    margin: 0;
+}
+#Sideview div {
+    padding: 10px;
+    background: var(--gray);
+}
+#Sideview div div,
+#Sideview div a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0;
+}
+#Sideview div a a {
+    margin: 0;
+}
+#Sideview div div p,
+#Sideview div a a {
+    margin: 0 5px 0 0;
+}
+#Sideview div div div,
+#Sideview div a div {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 0;
+}
+#Sideview div div:hover,
+#Sideview div div:hover p,
+#Sideview div a:hover,
+#Sideview div a:hover a {
+    position: relative;
+    color: white;
+    cursor: default;
+    text-shadow: 1px 1px 2px black, 0 0 15px var(--green);
+}
+#Sideview div a:hover {
+    cursor: pointer;
+}
+#Sideview div a:hover a {
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+}
+#Sideview div a a:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+#Sideview div a div:hover {
+    cursor: pointer;
+}
+#Sideview div div .tooltip,
+#Sideview div a .tooltip {
+    visibility: hidden;
+    background: var(--green);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+}
+#Sideview div div .tooltip::after,
+#Sideview div a .tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 15px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--green) transparent;
+}
+#Sideview div div:hover .tooltip,
+#Sideview div a:hover .tooltip {
+    visibility: visible;
+}
+/* -------------------------------------------------- Content => Main Content */
+#MainContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+#MainContent div {
+    margin: 10px 0 0 0;
+    box-shadow: 0 2px 4px 0 var(--green);
+    padding: 0 10px 0;
+    background: var(--gray);
+}
+#MainContent div h2 {
+    text-align: center;
+}
+#MainContent div div {
+    box-shadow: none;
+}
+#MainContent div:first-child {
+    margin-top: 0;
+}
+#MainContent p {
+    margin-left: 10px;
+}
+#MainContent h5 {
+    margin-left: 10px;
+}
+#Work div,
+#Education div {
+    border-top: 1px solid var(--green);
+    padding: 0;
+}
+#Education p span {
+    text-decoration: line-through;
+}
+/* ------------------------------------------------------------------- Footer */
+#Footer {
+    text-align: center;
+}
+#Footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0;
+}
+#Footer a a {
+    margin: 0;
+}
+#Footer a:hover a {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 15px var(--green);
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+}
+#Footer a a:hover {
+    color: var(--green);
+}
+/* ---------------------------------------------------------------------- RWD */
+@media only screen and (min-width: 600px) {
+    #Nav #LinkPersonal,
+    #Nav #LinkAbout,
+    #Nav #LinkFooter {
+        display: flex;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #Content {
+        display: flex;
+        flex-direction: row;
+    }
+    #Sideview {
+        box-shadow: -2px 2px 6px 0 var(--green);
+        max-width: 300px;
+    }
+    #MainContent div {
+        box-shadow: 2px 2px 6px 0 var(--green);
+        margin: 10px 0 0 10px;
+    }
+    #MainContent div h2 {
+        text-align: left;
+    }
+    #Nav #LinkLanguages,
+    #Nav #LinkSkills,
+    #Nav #LinkWork,
+    #Nav #LinkEducation,
+    #Nav #LinkCourses {
+        display: flex;
+    }
+}
