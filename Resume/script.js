@@ -4,8 +4,8 @@ let lang = "EN";
 const username = "MikeBidinger";
 const repository = "Web_Dev";
 const filePath = "Resume/data/data.json";
-const imgDir =
-    "https://raw.githubusercontent.com/MikeBidinger/Web_Dev/main/Resume/img/";
+const imgPath = "Resume/img/";
+const imgDir = `https://raw.githubusercontent.com/${username}/${repository}/main/${imgPath}`;
 
 async function loadJSONFromGitHub(username, repository, path) {
     const url = `https://raw.githubusercontent.com/${username}/${repository}/main/${path}`;
