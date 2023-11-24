@@ -57,7 +57,7 @@
                     "alt": "Phone"
                 },
                 "link": {
-                    "href": "tel://0612345678/",
+                    "href": "tel://+31612345678/",
                     "target": "_blank",
                     "innerHTML": "+31 (0)6-12345678"
                 }
@@ -685,7 +685,7 @@
                     "alt": "Phone"
                 },
                 "link": {
-                    "href": "tel://0612345678/",
+                    "href": "tel://+31612345678/",
                     "target": "_blank",
                     "innerHTML": "+31 (0)6-123456578"
                 }
