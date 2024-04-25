@@ -489,9 +489,9 @@
                 "title": {
                     "id": "BDQS-title",
                     "innerHTML": {
-                        "EN": "BDQS - Product Data Manager (Launch and Change Control, Supply)",
-                        "NL": "BDQS - Product Data Manager (Launch and Change Control, Supply)",
-                        "DE": "BDQS - Produkt Daten Manager (Launch and Change Control, Supply)"
+                        "EN": "Product Data Manager (Launch and Change Control, Supply)",
+                        "NL": "Product Data Manager (Launch and Change Control, Supply)",
+                        "DE": "Produkt Daten Manager (Launch and Change Control, Supply)"
                     }
                 },
                 "desc": {
