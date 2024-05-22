@@ -1,7 +1,7 @@
 ## ToolsApp
 ### A fully functional application using HTML, CSS and JavaScript as a front-end and Python (Flask) as a back-end.
 
-Tools (- [ ] = implemented / - [x] = to be implemented):
+Tools (<ul><li>- [x] item1</li><li>- [ ] item2</li></ul>):
 - Converters:
     - [ ] Timezones
     - [ ] Measurement units
